@@ -57,6 +57,6 @@ pip install numpy pandas matplotlib scikit-learn
 
 2. Open the notebook in Jupyter or VSCode.
 
-3. Download the dataset from the link and change the path accordingly.
+3. Download the file yeast.rar and change the path accordingly for the file yeast.arff
 
 4. Run cells sequentially; each section contains explanations and visualizations.
