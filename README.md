@@ -53,7 +53,7 @@ The goal is to understand why real-world biological datasets are challenging for
 
 ## How to Run
 1. Install dependencies:  
-pip install numpy pandas matplotlib scikit-learn
+pip install numpy pandas matplotlib scikit-learn liac-arff
 
 2. Open the notebook in Jupyter or VSCode.
 
