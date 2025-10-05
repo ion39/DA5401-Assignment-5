@@ -12,19 +12,16 @@ Use **t-SNE** and **Isomap** on the Yeast multi-label dataset to visualize data 
 ## Steps
 
 ### 1. Load Data
-```python
 X, Y, label_names = load_yeast_data(arff_path='data/yeast.arff')
 
 ### 2. Preprocess
+- Report shape of X and Y
+- Create simplified label index (top 2 single labels + most frequent multi-label)
+- Standardize features using StandardScaler()
 
-Report shape of X and Y
-
-Create simplified label index (top 2 single labels + most frequent multi-label)
-
-Standardize features using StandardScaler()
-
-3. t-SNE Visualization
+### 3. t-SNE Visualization
 X_tsne = run_tsne_and_plot(X_scaled, cat_idx, cat_names, perplexities=(5,30,50))
 
+### 4. Isomap Visualization
+X_iso = run_isomap_and_plot(X_scaled, cat_idx, cat_names)
 
-Identify noisy, outlier, and mixed regions
